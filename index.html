@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tifruit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=felipa:wght@400;600;700&display=swap" rel="stylesheet">
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Henny Penny"', 'cursive'],
+            bodyfont: ['"felipa"', 'serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">  
+
+</head>
+<body class=" bg-amber-200">
+    <header class="mb-10 sticky top-0 z-50 bg-amber-800 backdrop-blur-md border-b border-gray-100 p-4 flex justify-between items-center shadow-sm">
+<h1 class="text-4xl text-center font-bold"><span class="text-red-400">T</span><span class="text-amber-300">i</span><span class="text-green-400">f</span><span class="text-blue-300">r</span><span class="text-purple-300">u</span><span class="text-pink-300">i</span><span class="text-yellow-400">t</span>
+        </h1>
+    </header>
+    <main class="flex-1 p-4 max-w-md mx-auto w-full">
+     <section class="mb-10">
+        <h2 class="text-5xl text-left  mb-8 font-bodyfont font-bold">Bienvenue dans l'univers Tifruit !</h2>
+        <p class="text-3xl font-bodyfont mb-10">Découvrez notre sélection de jus de  fruits frais et délicieux produit localement. Commandez en ligne et profitez de la livraison rapide à domicile.</p>
+         
+        <div class=" w-full h-72 overflow-hidden rounded-2xl shadow-md mb-16">
+            <img src="images/star.jpg" alt="Jus de pomme" class="w-full h-72 object-cover rounded-lg mb-16">
+        </div>
+
+        <section id="catalogue" class="mt-8 bg-amber-100 p-4 rounded-lg shadow-md">
+            <h3 class="text-4xl font-bodyfont mb-4 font-bold ">Notre catalogue</h3>
+            <ul class="grid grid-cols-2 sm:grid-cols-2 gap-4  shadow-md p-4 rounded-lg">
+                <li class="bg-amber-200 rounded-2xl show-md p-4 h-[300px] flex flex-col">
+                    <div class=" w-full  flex-1 overflow-hidden relative">
+                    <img src="images/1.jpg" alt="Jus de pomme" class="w-full h-full object-cover rounded-lg mb-4"> 
+     <span class="absolute top-2 right-2 bg-amber-600 backdrop-blur-sm text-amber-200 text-sm font-bold font-bodyfont px-2 py-1 rounded-full shadow-md"> 3 000 FC</span>       
+                    </div>
+                    <div class="p-3 font-bodyfont bg-amber-200 flex flex-col justify-between gap-2">
+                    <h4 class="text-sm text-center truncate font-bodyfont mb-2">Jus de pomme</h4>
+                    <a 
+      href="https://wa.me/243000000000?text=Bonjour%20Tifruit,%20je%20souhaite%20commander%20un%20Jus%20de%20pomme" 
+      target="_blank"
+      class="w-full bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-bold text-xs py-3 px-3 rounded-xl text-center transition-all flex items-center justify-center gap-1 shadow-sm"
+    >
+      <span>Commander</span>
+      
+    </a>
+                    </div>
+                </li>
+                <li class="bg-amber-200 rounded-2xl p-4 h-[300px] flex flex-col">
+                    <div class=" w-full flex-1 overflow-hidden relative">
+                    <img src="images/2.jpg" alt="Jus d'orange" class="w-full h-full object-cover rounded-lg mb-4">
+                    <span class="absolute top-2 right-2 bg-amber-600 backdrop-blur-sm text-amber-200 text-sm font-bold font-bodyfont px-2 py-1 rounded-full shadow-md"> 5 000 FC</span>       
+                    </div>
+                    <div class="p-3 font-bodyfont bg-amber-200 flex flex-col justify-between gap-2">
+                    <h4 class="text-sm text-center truncate font-bodyfont mb-2">Jus d'orange</h4>
+                     <a 
+      href="https://wa.me/243000000000?text=Bonjour%20Tifruit,%20je%20souhaite%20commander%20un%20Jus%20de%20d'orange" 
+      target="_blank"
+      class="w-full bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-bold text-xs py-3 px-3 rounded-xl text-center transition-all flex items-center justify-center gap-1 shadow-sm"
+    >
+      <span>Commander</span>
+      
+    </a>
+                </li>
+                <li class="bg-amber-200 rounded-2xl p-4 h-[300px] flex flex-col">
+                    <div class=" w-full flex-1 overflow-hidden relative">
+                    <img src="images/3.jpg" alt="Jus de fraise" class="w-full h-full object-cover rounded-lg mb-4">
+                    <span class="absolute top-2 right-2 bg-amber-600 backdrop-blur-sm text-amber-200 text-sm font-bold font-bodyfont px-2 py-1 rounded-full shadow-md"> 5 000 FC</span>       
+                    </div>
+                    <div class="p-3 font-bodyfont bg-amber-200 flex flex-col justify-between gap-2">
+                    <h4 class="text-sm text-center truncate font-bodyfont mb-2">Jus de fraise</h4>
+                     <a 
+      href="https://wa.me/243000000000?text=Bonjour%20Tifruit,%20je%20souhaite%20commander%20un%20Jus%20de%20fraise" 
+      target="_blank"
+      class="w-full bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-bold text-xs py-3 px-3 rounded-xl text-center transition-all flex items-center justify-center gap-1 shadow-sm"
+    >
+      <span>Commander</span>
+      
+    </a>
+                </li>
+                <li class="bg-amber-200 rounded-2xl p-4 h-[300px] flex flex-col">
+                    <div class=" w-full flex-1 overflow-hidden relative">
+                    <img src="images/4.jpg" alt="Jus de mangue" class="w-full h-full object-cover rounded-lg mb-4">
+                    <span class="absolute top-2 right-2 bg-amber-600 backdrop-blur-sm text-amber-200 text-sm font-bold font-bodyfont px-2 py-1 rounded-full shadow-md"> 5 000 FC</span>       
+                    </div>
+                    <div class="p-3 font-bodyfont bg-amber-200 flex flex-col justify-between gap-2">
+                    <h4 class="text-sm text-center truncate font-bodyfont mb-2">Jus de mangue</h4>
+                     <a 
+      href="https://wa.me/243830591259?text=Bonjour%20Tifruit,%20je%20souhaite%20commander%20un%20Jus%20de%20mangue" 
+      target="_blank"
+      class="w-full bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-bold text-xs py-3 px-3 rounded-xl text-center transition-all flex items-center justify-center gap-1 shadow-sm"
+    >
+      <span>Commander</span>
+      
+    </a>
+                </li>
+            </ul>
+   
+
+  </main>
+        
+       
+
+</body>
+</html>
+            </ul>
+   
+
+  </main>
+        
+       
+
+</body>
+</html>
