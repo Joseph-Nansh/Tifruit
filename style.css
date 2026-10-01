@@ -1,3 +1,35 @@
 body{
     font-family: 'Henny Penny';
 }
+
+a{  transform: scale(1);
+     transition:transform 0.1s cubic-bezier(0.1, 0.7, 0.1, 1);
+    
+    &:active{
+        transform: scale(0.5);
+        transition-duration: 0.1s;
+        touch-action: manipulation;
+    }
+}
+ .unreveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 2.3s ease-out, transform 6s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform; 
+}
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.unreveal-left{
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 3s ease-out, transform 6s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+.reveal-left {
+  opacity: 1;
+  transform: translateY(0);
+}
+
