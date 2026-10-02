@@ -47,11 +47,9 @@
                     </div>
                     <div class="p-3 font-bodyfont bg-amber-200 flex flex-col justify-between gap-2">
                     <h4 class="text-sm text-center line-clamp-2 font-bodyfont mb-2 ">Jus de pomme</h4>
-                    <a 
-      href="https://wa.me/243830591259?text=Bonjour%20Tifruit,%20je%20souhaite%20commander%20un%20Jus%20de%20pomme" 
-      target="_blank"
-      class="w-full bg-emerald-600   text-white font-bold text-xs py-3 px-3 rounded-xl text-center  flex items-center justify-center gap-1 shadow-sm"
-    >
+                    <button class="add-to-cart-btn w-full bg-green-500 text-white font-bold text-xs py-3 px-3 rounded-xl text-center flex items-center justify-center gap-1 shadow-sm"
+       data-title="Jus de pomme" data-price="3000" data-image="Images/1.jpg"
+       data-price="3000" data-image="Images/1.jpg" >
       <span>Commander</span>
       
     </a>
@@ -64,11 +62,9 @@
                     </div>
                     <div class="p-3 font-bodyfont bg-amber-200 flex flex-col justify-between gap-2">
                     <h4 class="text-sm text-center truncate font-bodyfont mb-2">Jus d'orange</h4>
-                     <a 
-      href="https://wa.me/243830591259?text=Bonjour%20Tifruit,%20je%20souhaite%20commander%20un%20Jus%20de%20d'orange" 
-      target="_blank"
-      class="w-full bg-emerald-600   text-white font-bold text-xs py-3 px-3 rounded-xl text-center  flex items-center justify-center gap-1 shadow-sm"
-    >
+                    <button class="add-to-cart-btn w-full bg-green-500 text-white font-bold text-xs py-3 px-3 rounded-xl text-center flex items-center justify-center gap-1 shadow-sm"
+       data-title="Jus d'orange" data-price="5000" data-image="Images/2.jpg"
+       data-price="5000" data-image="Images/2.jpg" > 
       <span>Commander</span>
       
     </a>
@@ -80,11 +76,9 @@
                     </div>
                     <div class="p-3 font-bodyfont bg-amber-200 flex flex-col justify-between gap-2">
                     <h4 class="text-sm text-center line-clamp-2 font-bodyfont mb-2">Jus de fraise</h4>
-                     <a 
-      href="https://wa.me/243830591259?text=Bonjour%20Tifruit,%20je%20souhaite%20commander%20un%20Jus%20de%20fraise" 
-      target="_blank"
-      class="w-full bg-emerald-600   text-white font-bold text-xs py-3 px-3 rounded-xl text-center  flex items-center justify-center gap-1 shadow-sm"
-    >
+                  <button class="add-to-cart-btn w-full bg-green-500 text-white font-bold text-xs py-3 px-3 rounded-xl text-center flex items-center justify-center gap-1 shadow-sm"
+       data-title="Jus de fraise" data-price="5000" data-image="Images/3.jpg"
+       data-price="5000" data-image="Images/3.jpg" >
       <span>Commander</span>
       
     </a>
@@ -96,12 +90,12 @@
                     </div>
                     <div class="p-3 font-bodyfont bg-amber-200 flex flex-col justify-between gap-2">
                     <h4 class="text-sm text-center font-bodyfont mb-2">Jus de mangue</h4>
-                     <a 
-      href="https://wa.me/243830591259?text=Bonjour%20Tifruit,%20je%20souhaite%20commander%20un%20Jus%20de%20mangue" 
-      target="_blank"
-    class="w-full bg-emerald-600   text-white font-bold text-xs py-3 px-3 rounded-xl text-center  flex items-center justify-center gap-1 shadow-sm">
-      <span>Commander</span>
-    </a>
+                    
+      <button class="add-to-cart-btn w-full bg-green-500 text-white font-bold text-xs py-3 px-3 rounded-xl text-center flex items-center justify-center gap-1 shadow-sm"
+       data-title="Jus de mangue" data-price="5000" data-image="Images/4.jpg"
+       data-price="5000" data-image="Images/4.jpg" >
+        <span>Commander</span>
+      </button>
     </li>
     </ul>
   </main> 
@@ -109,5 +103,37 @@
 <footer class="bg-gray-900 text-white p-4 text-center font-bodyfont unreveal-left">
     <p>&copy; 2026 Tifruit. Tous droits réservés.</p>
 </footer>
+<div id="drawer-overlay" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+
+<!-- VOLET COULISSANT (BOTTOM DRAWER) -->
+<div id="order-drawer" class="fixed bottom-0 left-0 right-0 bg-amber-200 rounded-t-3xl p-6 z-50 transform translate-y-full transition-transform duration-500 ease-out shadow-2xl max-w-md mx-auto">
+  
+  <div class="w-12 h-1.5 bg-gray-100 rounded-full mx-auto mb-4"></div>
+
+  <div class="flex justify-between items-center mb-4">
+    <h3 id="drawer-product-title" class="text-xl font-extrabold font-bodyfont text-amber-950">Jus de Fruit</h3>
+    <button id="close-drawer-btn" class="text-gray-400 hover:bg-amber-100 rounded-full text-2xl font-bold p-1">✕</button>
+  </div>
+
+  <div class="flex items-center justify-between bg-amber-50 p-4 rounded-2xl mb-6">
+    <span class="text-amber-900 font-semibold font-bodyfont text-2xl">Quantité</span>
+    <div class="flex items-center gap-4 bg-white px-3 py-1.5 rounded-xl shadow-sm border border-amber-200">
+      <button id="btn-minus" class="text-amber-800  text-xl  font-extrabold w-8 h-8 rounded-lg transition-all duration-300 hover:bg-amber-100 flex items-center justify-center">-</button>
+      <span id="drawer-qty" class="text-lg font-bold font-bodyfont text-gray-800 w-6 text-center">1</span>
+      <button id="btn-plus" class="text-amber-800 text-xl active:scale-95 font-extrabold w-8 h-8 rounded-lg transition-all duration-300 hover:bg-amber-100 flex items-center justify-center">+</button>
+    </div>
+  </div>
+
+  <div class="flex justify-between items-center mb-6 px-1">
+    <span class="text-gray-500 font-medium text-2xl font-bodyfont ">Prix Total :</span>
+    <span id="drawer-total-price" class="text-2xl font-black font-bodyfont text-amber-600">3 000 FC</span>
+  </div>
+
+  <a id="whatsapp-final-btn" href="#" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold font-bodyfont text-xl py-3.5 px-4 rounded-2xl shadow-lg flex items-center justify-center gap-2 transition-all">
+    <span>Finaliser sur WhatsApp</span>
+    <span>➔</span>
+  </a>
+
+</div>
 </body>
 </html>

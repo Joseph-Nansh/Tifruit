@@ -2,6 +2,7 @@ body{
     font-family: 'Henny Penny';
 }
 
+.add-to-cart-btn,
 a{  transform: scale(1);
      transition:transform 0.1s cubic-bezier(0.1, 0.7, 0.1, 1);
     
@@ -31,5 +32,13 @@ a{  transform: scale(1);
 .reveal-left {
   opacity: 1;
   transform: translateY(0);
+}
+#btn-minus, #btn-plus{
+    transition: transform 0.1s cubic-bezier(0.1, 0.7, 0.1, 1);
+    &:active{
+        transform: scale(0.5);
+        transition-duration: 0.1s;
+        touch-action: manipulation;
+    }
 }
 
